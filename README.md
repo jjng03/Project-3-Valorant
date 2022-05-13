@@ -58,7 +58,8 @@ Valorant is a 5v5 character-based tactical shooter where precise gunplay meets u
 
 # MVP goals
 1) Functional nav-bar
-2) CSS
+2) displaying every agent, maps and weapons
 
 # Stretch goals
 1) include video clips of each agents abilities
+2) CSS to make it look professional
