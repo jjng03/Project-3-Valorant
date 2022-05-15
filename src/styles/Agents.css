@@ -1,0 +1,19 @@
+.agents {
+    border: 1px solid lightgray;
+    border-radius: 1rem;
+}
+
+.agent-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+    padding-top: 150px;
+}
+
+img {
+    width: 100%;
+}
