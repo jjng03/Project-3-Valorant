@@ -5,6 +5,9 @@ import '../styles/Nav.css';
 function Nav() {
     return (
         <div className="nav-container">
+            <Link to ='/'>
+                <div>HOME</div>
+            </Link>
             <Link to ='/agents'>
                 <div>AGENTS</div>
             </Link>
