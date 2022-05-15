@@ -5,6 +5,7 @@ import './styles/App.css';
 import Home from './components/Home';
 import Agents from './components/Agents';
 import Maps from './components/Maps';
+import Weapons from './components/Weapons';
 import Nav from './components/Nav';
 import { Route, Routes } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path='/' element={<Home />}/>
         <Route path='/agents' element={<Agents URL={URL}/>} />
         <Route path='/maps' element={<Maps URL={URL}/>} />
+        <Route path='/weapons' element={<Weapons URL={URL}/>} />
       </Routes>
     </div>
   );
