@@ -19,3 +19,7 @@ Valorant is a 5v5 character-based tactical shooter where precise gunplay meets u
 # Stretch goals
 1) include video clips of each agents abilities
 2) CSS to make it look professional
+
+
+# Reference 
+Background-image - http://wallpaperswide.com/valorant_triplesingle_screen-wallpapers.html
