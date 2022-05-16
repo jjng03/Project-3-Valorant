@@ -58,6 +58,7 @@ function Agents() {
             <div className="ability-section">
                 <h3>SPECIAL ABILITIES</h3>
                 <div className="ability-info">
+
                     <div className="ability1">
                         <img src={current.abilities && current.abilities[0].displayIcon} className="ability-icon" alt={current.abilities && current.abilities[0].displayName}/>
                         <h4>{current.abilities && current.abilities[0].displayName}</h4>
