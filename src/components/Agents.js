@@ -49,9 +49,34 @@ function Agents() {
                 <div className="column3">
                     <div className="agent-info">
                         <p>// ROLE</p>
-                        <h2>{current.role && current.role.displayName}<img src={current.role && current.role.displayIcon} className="icon"/></h2>
+                        <h2>{current.role && current.role.displayName}<img src={current.role && current.role.displayIcon} className="icon" alt={current.role && current.role.displayName}/></h2>
                         <p>// BIOGRAPHY</p>
                         <p>{current.description}</p>
+                    </div>
+                </div>
+            </div>
+            <div className="ability-section">
+                <h3>SPECIAL ABILITIES</h3>
+                <div className="ability-info">
+                    <div className="ability1">
+                        <img src={current.abilities && current.abilities[0].displayIcon} className="ability-icon" alt={current.abilities && current.abilities[0].displayName}/>
+                        <h4>{current.abilities && current.abilities[0].displayName}</h4>
+                        <p>{current.abilities && current.abilities[0].description}</p>
+                    </div>
+                    <div className="ability2">
+                        <img src={current.abilities && current.abilities[1].displayIcon} className="ability-icon" alt={current.abilities && current.abilities[1].displayName}/>
+                        <h4>{current.abilities && current.abilities[1].displayName}</h4>
+                        <p>{current.abilities && current.abilities[1].description}</p>
+                    </div>
+                    <div className="ability3">
+                        <img src={current.abilities && current.abilities[2].displayIcon} className="ability-icon" alt={current.abilities && current.abilities[2].displayName}/>
+                        <h4>{current.abilities && current.abilities[2].displayName}</h4>
+                        <p>{current.abilities && current.abilities[2].description}</p>
+                    </div>
+                    <div className="ability4">
+                        <img src={current.abilities && current.abilities[3].displayIcon} className="ability-icon" alt={current.abilities && current.abilities[3].displayName}/>
+                        <h4>{current.abilities && current.abilities[3].displayName}</h4>
+                        <p>{current.abilities && current.abilities[3].description}</p>
                     </div>
                 </div>
             </div>
