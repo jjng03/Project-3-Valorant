@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function Agents() {
     const [agents, setAgents] = useState([]);
-    // const [results, setResults] = useState([]);
     const [current, setCurrent] = useState({});
 
     const url = 'https://valorant-api.com/v1/agents';
@@ -29,38 +28,34 @@ function Agents() {
     }
     // console.log(agents)
     return (
-        <div className="agent-section">
-            <div className="column1">
-                {
-                    agents && agents.map((agent) => (
-                        <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrent}>
-                            <div className="agent-name">
-                                {(agent.isPlayableCharacter === true) ? <h1>{agent.displayName}</h1> : null}
-                            </div>
-                        </Link>
-                    ))
-                }
+        <>
+            <div className="agent-section">
+                <div className="column1">
+                    {
+                        agents && agents.map((agent) => (
+                            <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrent}>
+                                <div className="agent-name">
+                                    {(agent.isPlayableCharacter === true) ? <h1>{agent.displayName}</h1> : null}
+                                </div>
+                            </Link>
+                        ))
+                    }
+                </div>
+                <div className="column2">    
+                    <div className="agent-image">
+                        <img src={current.fullPortraitV2} alt={current.displayName}/>
+                    </div>
+                </div>
+                <div className="column3">
+                    <div className="agent-info">
+                        <p>// ROLE</p>
+                        <h2>{current.role && current.role.displayName}<img src={current.role && current.role.displayIcon} className="icon"/></h2>
+                        <p>// BIOGRAPHY</p>
+                        <p>{current.description}</p>
+                    </div>
+                </div>
             </div>
-            <div className="column2">
-                {
-                    agents.map((agent) => ( 
-                        <div className="agent-name">
-                            {(agent.displayName === "Fade") ? <img src={agent.fullPortraitV2}/> : null}
-                        </div>
-                    ))
-                }
-            </div>
-            <div className="column3">
-                {
-                    agents.map((agent) => (
-                        <div className="agent-name">
-                            {(agent.displayName === "Fade") ? <p>{agent.description}</p> : null}
-                        </div>
-                    ))
-                }
-            </div>
-        </div>
-            
+        </>
         
     )
 }
