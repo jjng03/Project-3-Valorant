@@ -51,8 +51,8 @@ function Maps() {
         <div className="map-main">
             <h6>MAPS</h6>
             <div className="button-section">
-                <button className="back">BACK</button>
-                <button className="next">NEXT</button>
+                {/* <button className="back">BACK</button>
+                <button className="next">NEXT</button> */}
                 <div className="map-section snaps-inline" onScroll={handleScroll}>
                     {
                         maps && maps.map((map)=> (
@@ -70,7 +70,7 @@ function Maps() {
                     {/* <Link to='/maps/layout' key={ currentMap.uuid } onClick={handleCurrentMap} > */}
                     <button className="openLayoutBtn" onClick={() => {setOpenLayout(true)}}>
                         {/* <p className="layout">view layout</p> */}
-                        view layout
+                        VIEW LAYOUT
                     </button>
                     {/* </Link> */}
                     {/* {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>} */}

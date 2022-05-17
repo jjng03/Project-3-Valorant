@@ -1,6 +1,8 @@
+/* ============ IMPORTED FONTS FROM GOOGLE =========== */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz&display=swap');
 
+/* ============ AGENT CONTAINER =========== */
 .agent-section {
     width: 100vw;
     height: 30vw;
@@ -10,6 +12,7 @@
     flex-direction: row;
     justify-content: center;
 }
+
 
 /* ============ COLUMN 1 (AGENT NAME) =========== */
 .column1 {
@@ -32,6 +35,7 @@ h1 {
     margin: 0;
 }
 
+
 /* ============ COLUMN 2 (AGENT IMAGE) =========== */
 .column2 {
     width: 25%;
@@ -47,6 +51,7 @@ h1 {
     margin-top: 100px;
     animation: fadeIn 8s; 
 }
+
 
 /* ============ COLUMN 3 (AGENT INFO) =========== */
 .column3 {
@@ -81,6 +86,7 @@ p {
     font-family: 'Karla', sans-serif;
     font-weight: bolder;
 }
+
 
 /* ============ ABILITY SECTION (ABILITY INFO) =========== */
 .ability-section {
