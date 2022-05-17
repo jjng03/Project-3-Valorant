@@ -1,11 +1,24 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Maps.css'
 import { Link } from 'react-router-dom';
+import Layout from '../pages/Layout';
 
 function Maps() {
     const [maps, setMaps] = useState([]);
     const [currentMap, setCurrentMap] = useState([]);
-
+    const [openLayout, setOpenLayout] = useState(false);
+    // const myRef = useRef();
+    // const [myElementIsVisible, setMyElementIsVisible] = useState();
+    // console.log(myElementIsVisible)
+    // useEffect(() => {
+    //     console.log(myRef.current)
+    //     const observer = new IntersectionObserver((entries) => {
+    //         const entry = entries[0];
+    //         setMyElementIsVisible(entry.isIntersecting)
+    //         // console.log(entry)
+    //     })
+    //     // observer.observe(myRef.current);
+    // })
     const url = 'https://valorant-api.com/v1/maps';
     const getMaps = async () => {
         const response = await fetch(url);
@@ -25,7 +38,7 @@ function Maps() {
             // targeting the alt of the img tag
             (map)=>map.displayName === e.target.alt
             );
-            console.log(findCurrentMap)
+            // console.log(findCurrentMap)
             setCurrentMap(findCurrentMap)
     }
 
@@ -54,9 +67,16 @@ function Maps() {
                 </div>
                 <div className="map-info">
                     <p className="map-name">{ currentMap.displayName }</p>
-                    <Link to='/maps/layout' key={ currentMap.uuid } onClick={handleCurrentMap}>
-                        <p className="layout">view layout</p>
-                    </Link>
+                    {/* <Link to='/maps/layout' key={ currentMap.uuid } onClick={handleCurrentMap} > */}
+                    <button className="openLayoutBtn" onClick={() => {setOpenLayout(true)}}>
+                        {/* <p className="layout">view layout</p> */}
+                        view layout
+                    </button>
+                    {/* </Link> */}
+                    {/* {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>} */}
+                </div>
+                <div className="layout">
+                    {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>}
                 </div>
             </div>
         </div>
