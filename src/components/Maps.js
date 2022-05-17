@@ -18,9 +18,9 @@ function Maps() {
     }, []);
 
     return (
-        <>
+        <div className="map-main">
             <h6>MAPS</h6>
-            <div className="map-section">
+            <div className="map-section snaps-inline">
                 {
                     maps && maps.map((map)=> (
                         <div className="allMaps">
@@ -33,7 +33,10 @@ function Maps() {
                     <h6>Maps</h6>
                 </div> */}
             </div>
-        </>
+            <div className="map-info">
+                <h7>Hello</h7>
+            </div>
+        </div>
     )
 }
 
