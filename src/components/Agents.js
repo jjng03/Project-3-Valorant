@@ -43,7 +43,7 @@ function Agents() {
                 </div>
                 <div className="column2">    
                     <div className="agent-image">
-                        <img src={current.fullPortraitV2} alt={current.displayName}/>
+                        <img src={current.fullPortraitV2} alt={current.displayName} className="agent-portrait"/>
                     </div>
                 </div>
                 <div className="column3">

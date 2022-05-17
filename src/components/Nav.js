@@ -6,16 +6,16 @@ function Nav() {
     return (
         <div className="nav-container">
             <Link to ='/'>
-                <div>HOME</div>
+                <div className="home">HOME</div>
             </Link>
             <Link to ='/agents'>
-                <div>AGENTS</div>
+                <div className="agents">AGENTS</div>
             </Link>
             <Link to='/maps'>
-                <div>MAPS</div>
+                <div className="maps">MAPS</div>
             </Link>
             <Link to='/weapons'>
-                <div>WEAPONS</div>
+                <div className="weapons">WEAPONS</div>
             </Link>
         </div>
     )

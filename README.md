@@ -22,4 +22,6 @@ Valorant is a 5v5 character-based tactical shooter where precise gunplay meets u
 
 
 # Reference 
-Background-image - http://wallpaperswide.com/valorant_triplesingle_screen-wallpapers.html
+Background-image (Homepage) - https://appuals.com/valorant-not-launching/
+
+Background-image (Ability section)- http://wallpaperswide.com/valorant_triplesingle_screen-wallpapers.html

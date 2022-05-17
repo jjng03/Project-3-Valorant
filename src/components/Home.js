@@ -7,7 +7,7 @@ function Home() {
     
             <div className="section1">
                 <div className="gallery">
-                    <h1>Hello World!</h1>
+                    
                 </div>
             </div>
 

@@ -1,0 +1,27 @@
+.map-section {
+    max-width: 54vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid black; */
+    overflow-y: hidden;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.every-map {
+    height: 60vh;
+}
+
+h6 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    /* border: 1px solid black; */
+    font-size: 100px;
+}
