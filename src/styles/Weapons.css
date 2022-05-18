@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* ============ IMPORTED FONTS FROM GOOGLE =========== */
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
+/* ============ WEAPON CONTAINER =========== */
 .weapon-body {
+    font-family: 'Bayon', sans-serif;
     /* border: 1px solid black; */
     margin-top: 80px;
     height: 100%;
@@ -8,21 +11,6 @@
     /* background-image: url('../images/Valorant7.png');
     background-repeat: no-repeat; */
     color: #0F1923;
-}
-
-.weapon-title {
-    /* border: 1px solid black; */
-    width: 70%;
-    height: 400px;
-    margin: auto;
-    padding: 50px;
-}
-.weapon-body h1 {
-    font-family: 'Anton', sans-serif;
-    /* border: 1px solid black; */
-    font-size: 100px;
-    width: 60%;
-    margin: 0;
 }
 
 .weapon-main {
@@ -35,24 +23,42 @@
     padding: 50px;
 }
 
-.weapon-section {
+
+/* ============ WEAPON HEADER =========== */
+.weapon-title {
     border: 1px solid black;
+    border-right: none;
+    max-width: 70%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 130px;
+    font-size: 60px;
+}
+
+.weapon-body h1 {
+    /* border: 1px solid black; */
+    max-width: 50%;
+    margin: 0;
+}
+
+
+/* ============ WEAPON SECTION =========== */
+.weapon-section {
+    border: 1px solid gray;
     height: 400px;
     width: 600px;
-    /* margin: 20px; */
-    /* display: block; */
     justify-content: center;
     align-items: center;
 }
 
-/* .weapon-name {
-    border: 1px solid black;
-} */
-
-.weapon-name h1 {
-    font-size: 60px;
-    padding: 30px;
+.weapon-name {
+    font-size: 35px;
     text-transform: uppercase;
+    /* border: 1px solid black; */
+    padding-left: 30px;
 }
 
 .weapon-image {

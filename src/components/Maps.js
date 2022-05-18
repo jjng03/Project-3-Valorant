@@ -56,8 +56,8 @@ function Maps() {
                 <div className="map-main snaps-inline" onScroll={handleScroll}>
                     {
                         maps && maps.map((map)=> (
-                            <div className="all-maps">                              
-                                <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/>                               
+                            <div className="all-maps">
+                                {(map.displayName !== "The Range") ? <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/> : null}                              
                             </div>
                         ))
                     }
