@@ -20,24 +20,25 @@
   text-decoration: none;
 } 
 
-.home:hover,
-.agents:hover,
-.maps:hover,
-.weapons:hover {
+.home-link:hover,
+.agents-link:hover,
+.maps-link:hover,
+.weapons-link:hover {
   background-color: gray;
   border-radius: 5px;
 }
 
-.home,
-.agents,
-.maps {
+.home-link,
+.agents-link,
+.maps-link {
   text-align: center;
   padding: 3px;
   width: 100px;
   border-radius: 5px;
 }
 
-.weapons {
+.weapons-link {
   width: 140px;
   padding: 3px;
+  text-align: center;
 }

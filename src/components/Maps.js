@@ -56,10 +56,8 @@ function Maps() {
                 <div className="map-section snaps-inline" onScroll={handleScroll}>
                     {
                         maps && maps.map((map)=> (
-                            <div className="all-maps">
-                                {/* <Link to='/maps' key={ map.uuid } onClick={handleCurrentMap}> */}
-                                    <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/>
-                                {/* </Link> */}
+                            <div className="all-maps">                              
+                                <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/>                               
                             </div>
                         ))
                     }
@@ -67,13 +65,9 @@ function Maps() {
                 </div>
                 <div className="map-info">
                     <p className="map-name">{ currentMap.displayName }</p>
-                    {/* <Link to='/maps/layout' key={ currentMap.uuid } onClick={handleCurrentMap} > */}
                     <button className="openLayoutBtn" onClick={() => {setOpenLayout(true)}}>
-                        {/* <p className="layout">view layout</p> */}
                         VIEW LAYOUT
                     </button>
-                    {/* </Link> */}
-                    {/* {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>} */}
                 </div>
                 <div className="layout">
                     {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>}

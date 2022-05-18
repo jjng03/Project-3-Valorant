@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.weapon-body {
+    border: 1px solid black;
+    margin-top: 80px;
+    height: 100%;
+    background-color: #f4f0ec;
+}
+
+.weapon-title {
+    border: 1px solid black;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+}
+.weapon-body h1 {
+    font-family: 'Anton', sans-serif;
+    border: 1px solid black;
+    font-size: 100px;
+    width: 60%;
+    margin: 0;
+}
+
+.weapon-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.weapon-section {
+    border: 1px solid black;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weapon-image {
+    max-height: 30%;
+    max-width: 100%;
+}
