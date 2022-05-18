@@ -33,7 +33,7 @@ function Agents() {
                 <div className="column1">
                     {
                         agents && agents.map((agent) => (
-                            <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrentAgent}>
+                            <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrentAgent} >
                                 <div className="agent-name">
                                     {(agent.isPlayableCharacter === true) ? <h1>{agent.displayName}</h1> : null}
                                 </div>
@@ -43,43 +43,49 @@ function Agents() {
                 </div>
                 <div className="column2">    
                     <div className="agent-image">
-                        <img src={currentAgent.fullPortraitV2} alt={currentAgent.displayName} className="agent-portrait"/>
+                        <img src={currentAgent.fullPortraitV2} alt={currentAgent.displayName} className="agent-portrait "/>
                     </div>
                 </div>
                 <div className="column3">
+                {(currentAgent.displayName) ?
                     <div className="agent-info">
                         <p>// ROLE</p>
                         <h2>{currentAgent.role && currentAgent.role.displayName}<img src={currentAgent.role && currentAgent.role.displayIcon} className="icon" alt={currentAgent.role && currentAgent.role.displayName}/></h2>
                         <p>// BIOGRAPHY</p>
                         <p>{currentAgent.description}</p>
                     </div>
+                    : null}
                 </div>
             </div>
             <div className="ability-section">
-                <h3>SPECIAL ABILITIES</h3>
-                <div className="ability-info">
+            {(currentAgent.displayName) ?
+                <div className="ability-main">
+                    <h3>SPECIAL ABILITIES</h3>
+                    <div className="ability-info">
 
-                    <div className="ability1">
-                        <img src={currentAgent.abilities && currentAgent.abilities[0].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[0].displayName}/>
-                        <h4>{currentAgent.abilities && currentAgent.abilities[0].displayName}</h4>
-                        <p>{currentAgent.abilities && currentAgent.abilities[0].description}</p>
-                    </div>
-                    <div className="ability2">
-                        <img src={currentAgent.abilities && currentAgent.abilities[1].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[1].displayName}/>
-                        <h4>{currentAgent.abilities && currentAgent.abilities[1].displayName}</h4>
-                        <p>{currentAgent.abilities && currentAgent.abilities[1].description}</p>
-                    </div>
-                    <div className="ability3">
-                        <img src={currentAgent.abilities && currentAgent.abilities[2].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[2].displayName}/>
-                        <h4>{currentAgent.abilities && currentAgent.abilities[2].displayName}</h4>
-                        <p>{currentAgent.abilities && currentAgent.abilities[2].description}</p>
-                    </div>
-                    <div className="ability4">
-                        <img src={currentAgent.abilities && currentAgent.abilities[3].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[3].displayName}/>
-                        <h4>{currentAgent.abilities && currentAgent.abilities[3].displayName}</h4>
-                        <p>{currentAgent.abilities && currentAgent.abilities[3].description}</p>
+                        <div className="ability1">
+                            <img src={currentAgent.abilities && currentAgent.abilities[0].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[0].displayName}/>
+                            <h4>{currentAgent.abilities && currentAgent.abilities[0].displayName}</h4>
+                            <p>{currentAgent.abilities && currentAgent.abilities[0].description}</p>
+                        </div>
+                        <div className="ability2">
+                            <img src={currentAgent.abilities && currentAgent.abilities[1].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[1].displayName}/>
+                            <h4>{currentAgent.abilities && currentAgent.abilities[1].displayName}</h4>
+                            <p>{currentAgent.abilities && currentAgent.abilities[1].description}</p>
+                        </div>
+                        <div className="ability3">
+                            <img src={currentAgent.abilities && currentAgent.abilities[2].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[2].displayName}/>
+                            <h4>{currentAgent.abilities && currentAgent.abilities[2].displayName}</h4>
+                            <p>{currentAgent.abilities && currentAgent.abilities[2].description}</p>
+                        </div>
+                        <div className="ability4">
+                            <img src={currentAgent.abilities && currentAgent.abilities[3].displayIcon} className="ability-icon" alt={currentAgent.abilities && currentAgent.abilities[3].displayName}/>
+                            <h4>{currentAgent.abilities && currentAgent.abilities[3].displayName}</h4>
+                            <p>{currentAgent.abilities && currentAgent.abilities[3].description}</p>
+                        </div>
                     </div>
                 </div>
+                : null}
             </div>
         </>
         

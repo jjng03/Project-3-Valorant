@@ -7,18 +7,7 @@ function Maps() {
     const [maps, setMaps] = useState([]);
     const [currentMap, setCurrentMap] = useState([]);
     const [openLayout, setOpenLayout] = useState(false);
-    // const myRef = useRef();
-    // const [myElementIsVisible, setMyElementIsVisible] = useState();
-    // console.log(myElementIsVisible)
-    // useEffect(() => {
-    //     console.log(myRef.current)
-    //     const observer = new IntersectionObserver((entries) => {
-    //         const entry = entries[0];
-    //         setMyElementIsVisible(entry.isIntersecting)
-    //         // console.log(entry)
-    //     })
-    //     // observer.observe(myRef.current);
-    // })
+    
     const url = 'https://valorant-api.com/v1/maps';
     const getMaps = async () => {
         const response = await fetch(url);
@@ -50,29 +39,27 @@ function Maps() {
     return (
         <div className="map-body">
             <h6>MAPS</h6>
-            <div className="button-section">
-                {/* <button className="back">BACK</button>
-                <button className="next">NEXT</button> */}
-                <div className="map-main snaps-inline" onScroll={handleScroll}>
-                    {
-                        maps && maps.map((map)=> (
-                            <div className="all-maps">
-                                {(map.displayName !== "The Range") ? <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/> : null}                              
-                            </div>
-                        ))
-                    }
             
-                </div>
-                <div className="map-info">
-                    <p className="map-name">{ currentMap.displayName }</p>
-                    <button className="openLayoutBtn" onClick={() => {setOpenLayout(true)}}>
-                        VIEW LAYOUT
-                    </button>
-                </div>
-                <div className="layout">
-                    {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap}/>}
-                </div>
+            <div className="map-main snaps-inline" onScroll={handleScroll}>
+                {
+                    maps && maps.map((map)=> (
+                        <div className="all-maps">
+                            {(map.displayName !== "The Range") ? <img src={map.splash} className="every-map" alt={map.displayName} onClick={handleCurrentMap}/> : null}                              
+                        </div>
+                    ))
+                }
+        
             </div>
+            <div className="map-info">
+                <p className="map-name">{ currentMap.displayName }</p>
+                <button className="openLayoutBtn" onClick={() => {setOpenLayout(true)}}>
+                    VIEW LAYOUT
+                </button>
+            </div>
+            <div className="layout">
+                {openLayout && <Layout closeLayout={setOpenLayout} currentMap={currentMap} />}
+            </div>
+            
         </div>
     )
 }

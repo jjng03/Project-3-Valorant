@@ -49,7 +49,7 @@ a {
 .agent-portrait {
     max-width: 35vw;
     margin-top: 100px;
-    animation: fadeIn 8s; 
+    animation: fadeIn 8s ease; 
 }
 
 
