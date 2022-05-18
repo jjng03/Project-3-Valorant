@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .weapon-body {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 80px;
     height: 100%;
     background-color: #f4f0ec;
+    /* background-image: url('../images/Valorant7.png');
+    background-repeat: no-repeat; */
+    color: #0F1923;
 }
 
 .weapon-title {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
     height: 400px;
     margin: auto;
@@ -16,7 +19,7 @@
 }
 .weapon-body h1 {
     font-family: 'Anton', sans-serif;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 100px;
     width: 60%;
     margin: 0;
@@ -28,19 +31,38 @@
     justify-content: center;
     width: 70%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 50px;
 }
 
 .weapon-section {
     border: 1px solid black;
     height: 400px;
     width: 600px;
-    display: flex;
+    /* margin: 20px; */
+    /* display: block; */
     justify-content: center;
     align-items: center;
 }
 
+/* .weapon-name {
+    border: 1px solid black;
+} */
+
+.weapon-name h1 {
+    font-size: 60px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
 .weapon-image {
-    max-height: 30%;
-    max-width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.wep-image {
+    max-height: 65%;
 }

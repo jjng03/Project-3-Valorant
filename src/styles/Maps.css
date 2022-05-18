@@ -4,14 +4,14 @@
 
 
 /* ============ MAP CONTAINER =========== */
-.map-main {
+.map-body {
     border: 1px solid black;
     margin-top: 80px;
     height: 100vh;
     background-color: #F8F4EC;
 }
 
-.map-section {
+.map-main {
     max-width: 70%;
     margin: auto;
     display: flex;

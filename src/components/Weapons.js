@@ -24,7 +24,12 @@ function Weapons() {
                 {
                     weapons && weapons.map((weapon) => (
                         <div className="weapon-section">
-                            <img src={weapon.displayIcon} alt={weapon.displayName} className="weapon-image"/>
+                            <div className="weapon-name">
+                                <h1>{weapon.displayName}.</h1>
+                            </div> 
+                            <div className="weapon-image">
+                                <img src={weapon.displayIcon} alt={weapon.displayName} className="wep-image"/>
+                            </div>
                         </div>
                     ))
                 }

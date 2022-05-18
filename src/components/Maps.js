@@ -48,12 +48,12 @@ function Maps() {
     }
 
     return (
-        <div className="map-main">
+        <div className="map-body">
             <h6>MAPS</h6>
             <div className="button-section">
                 {/* <button className="back">BACK</button>
                 <button className="next">NEXT</button> */}
-                <div className="map-section snaps-inline" onScroll={handleScroll}>
+                <div className="map-main snaps-inline" onScroll={handleScroll}>
                     {
                         maps && maps.map((map)=> (
                             <div className="all-maps">                              
