@@ -54,7 +54,7 @@ function Agents() {
                         <p>// BIOGRAPHY</p>
                         <p>{currentAgent.description}</p>
                     </div>
-                    : null}
+                    : <p>CLICK AN AGENT</p>}
                 </div>
             </div>
             <div className="ability-section">

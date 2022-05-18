@@ -4,12 +4,11 @@
 /* ============ WEAPON CONTAINER =========== */
 .weapon-body {
     font-family: 'Bayon', sans-serif;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin-top: 80px;
     height: 100%;
-    background-color: #f4f0ec;
-    /* background-image: url('../images/Valorant7.png');
-    background-repeat: no-repeat; */
+    overflow: hidden;
+    position: relative;
     color: #0F1923;
 }
 
@@ -21,12 +20,26 @@
     margin: auto;
     /* border: 1px solid black; */
     padding: 50px;
+    position: relative;
+}
+
+/* ============ BACKGROUND IMAGE =========== */
+.bg-image:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('../images/Valorant7.png');
+    background-size:contain;
 }
 
 
 /* ============ WEAPON HEADER =========== */
 .weapon-title {
-    border: 1px solid black;
+    border: 3px solid black;
     border-right: none;
     max-width: 70%;
     height: 400px;
@@ -36,6 +49,7 @@
     justify-content: center;
     line-height: 130px;
     font-size: 60px;
+    position: relative;
 }
 
 .weapon-body h1 {
@@ -47,11 +61,14 @@
 
 /* ============ WEAPON SECTION =========== */
 .weapon-section {
-    border: 1px solid gray;
+    border: 2px solid black;
     height: 400px;
     width: 600px;
     justify-content: center;
     align-items: center;
+    /* background-color: #f4f0ec; */
+    background-color: whitesmoke;
+    opacity: 0.9;
 }
 
 .weapon-name {
