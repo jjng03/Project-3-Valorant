@@ -20,6 +20,8 @@
 
 .section2 > h1 {
     color: #ece8e1;
+    display: flex;
+    align-items: center;
 }
 
 .gallery {
@@ -32,7 +34,10 @@
     background-repeat: no-repeat;
 }
 
-
+.github {
+    height: 40px;
+    margin-left: 20px;
+}
 @media only screen and (max-width: 1024px) {
     .gallery {
         height: 50vw;
@@ -44,11 +49,15 @@
 
 @media only screen and (max-width: 400px) {
     .gallery {
-        background-size: contain;
-        height: 90%;
+        background-size: cover;
+        height: 650px;
         background-image: url('../images/Valorantiphone.png');
     }
     .section1 {
-        height: 100vh;
+        height: 75vh;
+    }
+
+    .section2 > h1 {
+        font-size: 20px;
     }
 }

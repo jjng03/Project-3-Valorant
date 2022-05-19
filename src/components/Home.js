@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-
+import GithubLogo from '../images/GitHub-Logo.png'
 function Home() {
     return (
         <div>
@@ -12,8 +12,9 @@ function Home() {
 
             <div className="section2">
                 <h1>Developed by James Jung</h1>
-                <a href="https://github.com/jjng03">Github</a>
-                <a href="https://www.linkedin.com/in/jamesjung03/">LinkedIn</a>
+                <a href="https://github.com/jjng03">
+                    <img src={GithubLogo} alt="Github" className="github"/>
+                </a>
             </div>
         </div>
     )
