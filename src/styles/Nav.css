@@ -42,3 +42,21 @@
   padding: 3px;
   text-align: center;
 }
+
+/* ============== MEDIA QUERY ============ */
+@media only screen and (max-width: 390px) {
+  .nav-container {
+    font-size: 15px;
+    width: 390px;
+  }
+
+  .weapons-link {
+    width: 100px;
+  }
+
+  .home-link,
+  .agents-link,
+  .maps-link {
+    width: 90px;
+}
+}

@@ -81,7 +81,7 @@ h2 {
     display: flex;
 }
 
-p {
+.agent-info > p {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
     font-weight: bolder;
@@ -92,7 +92,7 @@ p {
 .ability-section {
     font-family: 'Anton', sans-serif;
     padding: 150px 0;
-    width: 100vw;
+    /* width: 100vw; */
     max-width: 70%;
     height: 1000px;
     margin: auto;
@@ -133,3 +133,68 @@ h3 {
 h4 {
     font-size: 30px;
 }
+
+/* ============== MEDIA QUERY ============ */
+@media only screen and (max-width: 390px) {
+    .column1 {
+        font-size: 12px;
+        /* border: 1px solid white; */
+    }
+
+    .column2 {
+        width: 38%;
+    }
+
+    .column3 {
+        width: 20%;
+    }
+
+    .agent-section {
+        height: 200px;
+    }
+
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    .agent-info > p,
+    p {
+        font-size: 5px;
+    }
+
+    .column3 {
+        width: 25%;
+    }
+
+    .ability-icon {
+        width: 40px;
+    }
+
+    .ability-info {
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .ability-section {
+        /* border: 1px solid black; */
+        background-size: 70%;
+        padding-top: 50px;
+        height: 400px;
+    }
+
+    .ability1,
+    .ability2,
+    .ability3,
+    .ability4 {
+    width: 50px;
+}
+    .agent-portrait {
+        max-width: 52vw;
+        margin-top: 50px;
+    }
+  }

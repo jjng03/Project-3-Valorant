@@ -11,9 +11,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className="section2">
+            {/* <div className="section2">
                 <h1>Social media</h1>
-            </div>
+            </div> */}
         </div>
     )
 }

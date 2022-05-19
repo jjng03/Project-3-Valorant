@@ -8,7 +8,7 @@
     border: 1px solid black;
     margin-top: 80px;
     height: 100vh;
-    background-color: #F8F4EC;
+    background-color: #FAF9F6;
 }
 
 .map-main {
@@ -38,7 +38,7 @@
 
 
 /* ============ MAPS TITLE =========== */
-h6 {
+.map-body > h1 {
     font-family: 'Anton', sans-serif;
     font-size: 120px;
     margin: 0;
@@ -92,4 +92,53 @@ h6 {
     top: 60%;
     color: whitesmoke;
     background-color: black;
+}
+
+/* ============== MEDIA QUERY ============ */
+@media only screen and (max-width: 390px) {
+    .map-body {
+        border: 1px solid black;
+
+    }
+    
+    .map-body > h1 {
+        font-size: 50px;
+        font-family: 'Anton', sans-serif;
+        position: absolute;
+        top: 20%;
+        left: 8%;
+    }
+
+    .every-map {
+        height: 38vw;
+        padding: 0;
+        margin-top: 140px;
+    }
+
+    .map-info {
+        height: 50px;
+        width: 50px;
+        /* border: 1px solid black; */
+        position: absolute;
+        left: 65%;
+        top: 39%;
+        background-color: #B2BEB5;
+        color: whitesmoke;
+        padding: 20px;
+    }
+
+    .openLayoutBtn {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        font-size: 5px;
+        position: absolute;
+        top: 60%;
+        right: 13%;
+    }
+
+    .map-name {
+        font-size: 15px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
 }

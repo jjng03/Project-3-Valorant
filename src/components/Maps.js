@@ -38,7 +38,7 @@ function Maps() {
 
     return (
         <div className="map-body">
-            <h6>MAPS</h6>
+            <h1>MAPS</h1>
             
             <div className="map-main snaps-inline" onScroll={handleScroll}>
                 {
