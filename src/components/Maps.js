@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Maps.css'
-import { Link } from 'react-router-dom';
 import Layout from '../pages/Layout';
 
 function Maps() {
@@ -12,10 +11,8 @@ function Maps() {
     const getMaps = async () => {
         const response = await fetch(url);
         const data = await response.json();
-        // console.log(data)
         setMaps(data.data)
     }
-    // console.log(maps)
 
     useEffect(()=>{
         getMaps();
@@ -27,7 +24,6 @@ function Maps() {
             // targeting the alt of the img tag
             (map)=>map.displayName === e.target.alt
             );
-            // console.log(findCurrentMap)
             setCurrentMap(findCurrentMap)
     }
 

@@ -24,6 +24,8 @@ Valorant is a 5v5 character-based tactical shooter where precise gunplay meets u
 # Reference 
 Background-image (Homepage) - https://www.reddit.com/r/WallpaperRequests/comments/gvif1g/is_it_possible_for_someone_to_turn_this_into/
 
+Background-image (Homepage for mobile) -https://gosuwall.com/1211-valorant-logo-wallpaper/
+
 Background-image (Ability section)- http://wallpaperswide.com/valorant_triplesingle_screen-wallpapers.html
 
 Background-image (Weapons) - https://wallpapercave.com/w/wp6012333

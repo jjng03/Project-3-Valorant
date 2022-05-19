@@ -17,7 +17,6 @@ function Weapons() {
 
     return (
         <div className="weapon-body">
-            {/* <img src={Valorant7} alt="" className="bg-image"/> */}
             <div className="bg-image">
             <div className="weapon-title">
                 <h1>CHOOSE YOUR WEAPON</h1>

@@ -23,17 +23,16 @@ function Agents() {
         const findCurrentAgent = agents.find(
             (agent)=>agent.displayName.toUpperCase() === e.target.innerText
             );
-            console.log(findCurrentAgent)
-            setCurrentAgent(findCurrentAgent)
+            setCurrentAgent(findCurrentAgent);
     }
-    // console.log(agents)
+    
     return (
         <>
             <div className="agent-section">
                 <div className="column1">
                     {
                         agents && agents.map((agent) => (
-                            <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrentAgent} >
+                            <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrentAgent}>
                                 <div className="agent-name">
                                     {(agent.isPlayableCharacter === true) ? <h1>{agent.displayName}</h1> : null}
                                 </div>

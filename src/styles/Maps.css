@@ -98,21 +98,20 @@
 @media only screen and (max-width: 390px) {
     .map-body {
         border: 1px solid black;
-
     }
     
     .map-body > h1 {
-        font-size: 50px;
+        font-size: 45px;
         font-family: 'Anton', sans-serif;
         position: absolute;
-        top: 20%;
-        left: 8%;
+        top: 18%;
+        left: 6%;
     }
 
     .every-map {
-        height: 38vw;
+        height: 40vw;
         padding: 0;
-        margin-top: 140px;
+        margin: 60px;
     }
 
     .map-info {
@@ -120,8 +119,8 @@
         width: 50px;
         /* border: 1px solid black; */
         position: absolute;
-        left: 65%;
-        top: 39%;
+        left: 67%;
+        top: 36%;
         background-color: #B2BEB5;
         color: whitesmoke;
         padding: 20px;
@@ -140,5 +139,23 @@
         position: absolute;
         top: 15%;
         left: 15%;
+    }
+
+    .map-main {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    
+    .snaps-inline {
+        scroll-snap-type: y mandatory;
+    }
+    
+    .snaps-inline > * {
+        scroll-snap-align: start;
     }
 }
