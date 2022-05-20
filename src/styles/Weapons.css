@@ -91,7 +91,7 @@
 }
 
 /* ============== MEDIA QUERY ============ */
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
     .weapon-title {
         height: 200px;
         line-height: 60px;

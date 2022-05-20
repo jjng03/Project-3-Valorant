@@ -47,10 +47,12 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .gallery {
-        background-size: cover;
-        height: 650px;
+        /* background-size: contain; */
+        background-position: center;
+        height: 635px;
+        width: 100%;
         background-image: url('../images/Valorantiphone.png');
     }
     .section1 {
