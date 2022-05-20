@@ -4,7 +4,8 @@
 Valorant is a 5v5 character-based tactical shooter where precise gunplay meets unique agent abilities.  This is an information page for all agents + agents abilities, map layouts and weapons.
 
 # Component hierarchy
-![component](https://user-images.githubusercontent.com/101623317/168386150-fe368eef-ef45-4906-afe0-194c2cf83777.png)
+![component](https://user-images.githubusercontent.com/101623317/169535341-e2ab330f-637b-4f32-90ee-938139bbbbe3.png)
+
 
 # Wireframe
 ![Valorant3](https://user-images.githubusercontent.com/101623317/168383858-7e5ec58a-8f0e-41d5-bbdf-3729c5cb2af1.png)
