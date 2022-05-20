@@ -1,16 +1,26 @@
 # Project-3-Valorant
 
+# APP Link 
+https://project-3-valorant.netlify.app/
+
 # Description 
 Valorant is a 5v5 character-based tactical shooter where precise gunplay meets unique agent abilities.  This is an information page for all agents + agents abilities, map layouts and weapons.
 
-# Component hierarchy
-![component](https://user-images.githubusercontent.com/101623317/169535341-e2ab330f-637b-4f32-90ee-938139bbbbe3.png)
+# Technologies Used
+React
 
 
 # Wireframe
 ![Valorant3](https://user-images.githubusercontent.com/101623317/168383858-7e5ec58a-8f0e-41d5-bbdf-3729c5cb2af1.png)
 ![Valorant2](https://user-images.githubusercontent.com/101623317/168383864-89e8e41e-0104-4f54-9604-05cdc4f86901.png)
 ![Valorant1](https://user-images.githubusercontent.com/101623317/168383868-62e1ca20-27be-4233-99f3-9f273ca096cf.png)
+
+
+# Images
+![Homepage](https://user-images.githubusercontent.com/101623317/169538346-b80b2cee-c741-4787-8efc-6adf7f075acf.png)
+![Agent](https://user-images.githubusercontent.com/101623317/169538356-c83b41f2-36a1-44f5-8efe-ae98d96432fc.png)
+![Map](https://user-images.githubusercontent.com/101623317/169538362-9e231958-55c5-45c5-935a-e5a5009a03ed.png)
+![Weapon](https://user-images.githubusercontent.com/101623317/169538369-6d6a505b-492f-4b1f-9bb7-78c47ab1b440.png)
 
 # User stories
 1) To be able to view all agents, maps and weapons
@@ -19,7 +29,7 @@ Valorant is a 5v5 character-based tactical shooter where precise gunplay meets u
 
 # Stretch goals
 1) include video clips of each agents abilities
-2) CSS to make it look professional
+2) A slide animation for the homepage
 
 
 # Reference 
