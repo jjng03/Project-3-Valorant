@@ -3,10 +3,14 @@ import '../styles/Agents.css';
 import { Link } from 'react-router-dom';
 
 function Agents() {
+    // ==== USE STATE FUNCTIONS ==== \\
     const [agents, setAgents] = useState([]);
     const [currentAgent, setCurrentAgent] = useState({});
 
+    // ==== API URL ==== \\
     const url = 'https://valorant-api.com/v1/agents';
+
+    // ==== FETCH API AND RETURN JSON DATA ==== \\
     const getAgents = async () => {
         const response = await fetch(url);
         const data = await response.json();
@@ -14,24 +18,27 @@ function Agents() {
         setAgents(data.data)
     }
 
+    // ==== RUN FUNCTION AFTER RENDERING ==== \\
     useEffect(()=>{
         getAgents();
     }, []);
 
+    // ==== FIND AGENT DATA WHEN TARGETING THE AGENT'S NAME ==== \\
     const handleCurrentAgent = (e)=>{
-        console.log(e.target.innerText)
+        // console.log(e.target.innerText)
         const findCurrentAgent = agents.find(
             (agent)=>agent.displayName.toUpperCase() === e.target.innerText
             );
             setCurrentAgent(findCurrentAgent);
     }
-    
+
     return (
         <>
             <div className="agent-section">
                 <div className="column1">
                     {
                         agents && agents.map((agent) => (
+                            // ==== WHEN AGENT NAME IS CLICKED THEN RUN handleCurrentAgent FUNCTION TO GRAB THE AGENT'S DATA==== \\
                             <Link to={`/agents`} key={ agent.uuid } onClick={handleCurrentAgent}>
                                 <div className="agent-name">
                                     {(agent.isPlayableCharacter === true) ? <h1>{agent.displayName}</h1> : null}

@@ -27,16 +27,16 @@ function Maps() {
             setCurrentMap(findCurrentMap)
     }
 
-    const handleScroll = (e)=>{
-        console.log(e.target.scrollWidth, e.target.scrollLeft)
+    // const handleScroll = (e)=>{
+    //     console.log(e.target.scrollWidth, e.target.scrollLeft)
 
-    }
+    // }
 
     return (
         <div className="map-body">
             <h1>MAPS</h1>
             
-            <div className="map-main snaps-inline" onScroll={handleScroll}>
+            <div className="map-main snaps-inline" >
                 {
                     maps && maps.map((map)=> (
                         <div className="all-maps">

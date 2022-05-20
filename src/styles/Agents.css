@@ -5,7 +5,7 @@
 /* ============ AGENT CONTAINER =========== */
 .agent-section {
     width: 100vw;
-    height: 30vw;
+    height: 34vw;
     background-color: #010b13;
     margin-top: 80px;
     display: flex;
@@ -41,6 +41,7 @@ a {
 /* ============ COLUMN 2 (AGENT IMAGE) =========== */
 .column2 {
     width: 25%;
+    max-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,8 @@ a {
 }
 
 .agent-portrait {
-    max-width: 35vw;
+    height: 80vh;
+    width: 60vh;
     margin-top: 100px;
     animation: fadeIn 5s ease; 
 }
@@ -61,6 +63,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px;
 }
 
 .icon {
